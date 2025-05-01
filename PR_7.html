@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Navbar with Symbols</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+      background: linear-gradient(-45deg, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 400% 400%;
+      animation: smoothRainbow 20s ease infinite;
+      border-bottom: 4px solid white;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      padding-bottom: 5px;
+      border-bottom: 3px solid transparent;
+      transition: border-bottom 0.3s, color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav a:hover {
+      border-bottom: 3px solid white;
+      color: #f0f0f0;
+    }
+
+    @keyframes smoothRainbow {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="home.html">🏠 Home</a>
+    <a href="#">🚗 Cars</a>
+    <a href="#">🚲 Bicycle</a>
+    <a href="#">⚙️ Engines</a>
+    <a href="#">📱 Electronics</a>
+  </nav>
+
+</body>
+</html>
